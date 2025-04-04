@@ -4,13 +4,13 @@
     align-items: center;
     width: 100%;
     justify-content: space-between;
+    z-index: 10;
 
-    
-    
 }
 
 .NavBar #texth1{
     padding-left: 100px;
+    font-size: 40px;
 }
 .NavBar #texth3{
     padding-right: 100px;

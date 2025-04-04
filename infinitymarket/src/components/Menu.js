@@ -1,8 +1,22 @@
-import styles from './estilos/Sanduiche.module.css';
+import React, { useEffect, useState } from 'react';
+import styles from './estilos/Menu.module.css';
 
-function Sanduiche(){
+
+function Menu(){
+    const [top, setTop] = useState(100);
+
+    useEffect(() => {
+        const handleScroll = () => {
+          setTop(100 + window.scrollY); // Acompanha o scroll
+        };
+    
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
+      }, []);
+  
     return(
-        <div className={styles.Container_Maior}>
+        <div className={styles.Container_Maior} style={{ top: `${top}px`, position: 'absolute' }}>
+
 
             <div id={styles.Container_Menor}>
                 <div id={styles.Conteudo}>
@@ -48,4 +62,4 @@ function Sanduiche(){
 
 }
 
-export default Sanduiche
+export default Menu

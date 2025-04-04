@@ -1,12 +1,17 @@
 import './App.css';
 import NavBar from './components/NavBar';
-import Sanduiche from './components/sanduiche';
+import Cards from './components/Cards';
+import Menu from './components/Menu';
 
 function App() {
   return (
     <div>
       <NavBar/>
-      <Sanduiche/>
+      <div className="Container">
+        <Menu/>
+        <Cards/>
+      </div>
+
     </div>
   );
 }
