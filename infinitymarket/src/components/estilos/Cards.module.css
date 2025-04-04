@@ -46,3 +46,24 @@
 p + p{
     margin-top: 25px;
 }
+
+.heart-checkbox {
+    display: none;
+  }
+
+  .heart-label {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-image: url("https://img.icons8.com/ios/50/000000/like--v1.png");
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-left: 260px;
+  
+  }
+
+  .heart-checkbox:checked + .heart-label {
+    background-image: url("https://img.icons8.com/ios-filled/50/fa314a/like.png");
+    transform: scale(1.1);
+  }

@@ -1,16 +1,10 @@
 import './App.css';
-import NavBar from './components/NavBar';
-import Cards from './components/Cards';
-import Menu from './components/Menu';
+import Explorar from './pages/Explorar.js'
 
 function App() {
   return (
-    <div>
-      <NavBar/>
-      <div className="Container">
-        <Menu/>
-        <Cards/>
-      </div>
+    <div>     
+     <Explorar/>
 
     </div>
   );
