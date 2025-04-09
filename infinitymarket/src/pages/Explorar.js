@@ -1,16 +1,18 @@
 import './Explorar.css';
-import NavBar from '../components/NavBar';
+import TitlePage from '../components/TitlePage';
 import Cards from '../components/Cards';
 import Menu from '../components/Menu';
+import Button from '../components/Button'
 
 function Explorar() {
   return (
     <div className="Background">
-      <NavBar />
+      <TitlePage/>
       <div className="Container">
         <Menu />
         <Cards />
       </div>
+        <Button/>
     </div>
   );
 }

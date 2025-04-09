@@ -6,6 +6,7 @@ function Cards() {
     <div className={styles.Conteudo}>
       <div className={styles.Alinhamento_Card}>
         <div className={styles.Card}>
+              <p id={styles.TextUF}>UF</p>
               <img src="/images/produtos/produto1.png" alt="Produto" />
               <div className={styles.TextCard}>
                 <p id={styles.TextName}>Nome Produto</p>
@@ -18,6 +19,7 @@ function Cards() {
         </div>
 
         <div className={styles.Card}>
+              <p id={styles.TextUF}>UF</p>
               <img src="/images/produtos/produto1.png" alt="Produto" />
               <div className={styles.TextCard}>
                 <p id={styles.TextName}>Nome Produto</p>
@@ -30,6 +32,7 @@ function Cards() {
         </div>
 
         <div className={styles.Card}>
+              <p id={styles.TextUF}>UF</p>
               <img src="/images/produtos/produto1.png" alt="Produto" />
               <div className={styles.TextCard}>
                 <p id={styles.TextName}>Nome Produto</p>
@@ -42,6 +45,7 @@ function Cards() {
         </div>
 
         <div className={styles.Card}>
+              <p id={styles.TextUF}>UF</p>
               <img src="/images/produtos/produto1.png" alt="Produto" />
               <div className={styles.TextCard}>
                 <p id={styles.TextName}>Nome Produto</p>
@@ -57,6 +61,7 @@ function Cards() {
 
       <div className={styles.Alinhamento_Card}>
       <div className={styles.Card}>
+              <p id={styles.TextUF}>UF</p>
               <img src="/images/produtos/produto1.png" alt="Produto" />
               <div className={styles.TextCard}>
                 <p id={styles.TextName}>Nome Produto</p>
@@ -69,6 +74,7 @@ function Cards() {
         </div>
 
         <div className={styles.Card}>
+              <p id={styles.TextUF}>UF</p>
               <img src="/images/produtos/produto1.png" alt="Produto" />
               <div className={styles.TextCard}>
                 <p id={styles.TextName}>Nome Produto</p>
@@ -81,6 +87,7 @@ function Cards() {
         </div>
 
         <div className={styles.Card}>
+              <p id={styles.TextUF}>UF</p>
               <img src="/images/produtos/produto1.png" alt="Produto" />
               <div className={styles.TextCard}>
                 <p id={styles.TextName}>Nome Produto</p>
@@ -93,6 +100,7 @@ function Cards() {
         </div>
 
         <div className={styles.Card}>
+              <p id={styles.TextUF}>UF</p>
               <img src="/images/produtos/produto1.png" alt="Produto" />
               <div className={styles.TextCard}>
                 <p id={styles.TextName}>Nome Produto</p>
