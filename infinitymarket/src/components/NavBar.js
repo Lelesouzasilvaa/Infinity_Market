@@ -2,29 +2,23 @@ import React, { useEffect, useState } from 'react';
 import styles from './estilos/NavBar.module.css';
 
 function NavBar(){
-
-     const [top, setTop] = useState(0);
-    
-        useEffect(() => {
-            const handleScroll = () => {
-              setTop(0 + window.scrollY); // Acompanha o scroll
-            };
-        
-            window.addEventListener('scroll', handleScroll);
-            return () => window.removeEventListener('scroll', handleScroll);
-          }, []);
     return(
-        <div className={styles.NavBar}>
-            <div>
-                <h1 id={styles.texth1} style={{ top: `${top}px`, position: 'absolute' }}>Explorar</h1>
+            <div className={styles.topbar}>
+                <a href="#" className={styles.logo}>INFINITY MARKET</a>
+                <div className={styles.input_container}>
+                <img src="/images/icons/search.png" alt="Pesquisa" className={styles.search_icon} />
+                <input type="text" placeholder="pesquise por itens, coleções ou contas..." />
+                </div>
+                <nav>
+                    <a href="#">Explorar</a>
+                    <a href="#">Coleções</a>
+                    <a href="#">Anúncios</a>
+                    <a href="#">Comunidade</a>
+   
+                </nav>
+                <img src="/images/icons/user.png" alt="Usuario" className={styles.user_icon} />
             </div>
-
-            <div>
-                <p id={styles.texth3}>30k Produtos</p>
-            </div>
-        </div>
-        
-    )
+    );
 }
 
 export default NavBar

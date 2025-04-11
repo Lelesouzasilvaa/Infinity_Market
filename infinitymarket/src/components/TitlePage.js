@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import styles from './estilos/NavBar.module.css';
+import styles from './estilos/TitlePage.module.css';
 
 function TitlePage(){
 

@@ -9,11 +9,6 @@
     gap: 50px;
     align-items: flex-end;
 }
-.Alinhamento_Card{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-}
 
 .Card{
     display: flex;

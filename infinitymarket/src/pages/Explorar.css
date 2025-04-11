@@ -10,6 +10,16 @@ body{
 .Container{
     display: flex;
     flex-direction: row;
-      
+ 
 }
-
+.Conteudo{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-left: 25%;
+}
+.Alinhamento_Card{
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+} 
