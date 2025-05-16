@@ -16,7 +16,9 @@ function NavBar(){
                     <a href="#">Comunidade</a>
    
                 </nav>
+                <button id={styles.button}>Criar</button>
                 <img src="/images/icons/user.png" alt="Usuario" className={styles.user_icon} />
+                
             </div>
     );
 }

@@ -1,11 +1,11 @@
 import './App.css';
-import Explorar from './pages/Explorar.js'
-import Produto from './pages/Produto.js'
+// import Explorar from './pages/Explorar.js'
+import Categoria from './pages/Categoria.js'
 
 function App() {
   return (
     <div>     
-     <Produto/>
+     <Categoria/>
     </div>
   );
 }

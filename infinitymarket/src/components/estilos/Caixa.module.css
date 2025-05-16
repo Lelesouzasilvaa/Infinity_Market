@@ -1,0 +1,68 @@
+@keyframes gradienteMovimento {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.Caixa_Container{
+    margin-top: 10%;
+    height: 352px;
+    width: 1152px;
+    background-color: rgba(0, 0, 255, 0.555);
+    display: flex;
+    justify-self: center;
+    border-radius: 10px;
+    flex-direction: column;
+    background-image: linear-gradient(90deg, rgba(0, 0, 255, 0.5), rgba(70, 70, 224, 0.904), rgba(0, 0, 0, 0.63));
+    animation: gradienteMovimento 20s linear infinite;
+    background-size: 200% 200%;
+}
+
+.Caixa_Container:hover{
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.199);
+    transform: scale(1.05);
+    transition: transform 0.3s;
+    cursor: pointer;
+    border: 5px solid rgb(255, 255, 255);
+}
+
+.Titulo_Container{
+   display: flex;
+   margin-left: 1%;
+   align-items: center;
+ 
+}
+#arrow_id{
+    width: 15px;
+    height: 17px;
+    transform: rotate(-180deg);
+    cursor: pointer;
+}
+#texto_titulo{
+    color: rgba(255, 255, 255, 0.685);
+    font-size: 30px;
+    margin-left: 1%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#texto_titulo:hover{
+    color: white;
+    transform: scale(1.05);
+}
+
+#texto_principal{
+    color: white;
+    font-size: 100px;
+    display: flex;
+    justify-content: center; /* Alinha horizontalmente */
+    align-items: center;
+    margin-top: 0;
+    font-weight: bold;
+    
+}
