@@ -2,8 +2,9 @@ import style from './estilos/Button.module.css'
 
 function Button(){
    return(
-    <div>
-        <button id={style.Button}>Ver Mais</button>
+    <div className={style.alinhamentoButton}>
+        <button id={style.ButtonUm}>Anterior</button>
+        <button id={style.ButtonDois}>Próximo</button>
     </div>
    )
 }

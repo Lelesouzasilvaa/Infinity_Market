@@ -1,11 +1,30 @@
-#Button{
+.alinhamentoButton{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 10px;
+    
+}
+
+#ButtonUm, #ButtonDois{
     width: 167px;
     height: 54px;
-    background-color: gray;
     border-radius: 10px;
     border: none;
     color: white;
     cursor: pointer;
-    margin-left: 58%;
-    margin-top: 10px;
+    border: 1px solid gray;
+    font-size: 20px;
+    
+}
+
+#ButtonUm{
+    background-color: white;
+    color: gray;
+}
+
+#ButtonDois{
+    background-color: #162E8F;
+    color: white;
+    
 }

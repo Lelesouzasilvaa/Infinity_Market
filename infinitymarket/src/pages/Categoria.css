@@ -1,4 +1,19 @@
 .Conteudo{
     top: 50%;
-    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+}
+
+.alinhamentoHorizontal{
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.alinhamentoVertical{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
