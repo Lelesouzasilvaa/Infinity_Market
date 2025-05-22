@@ -1,0 +1,60 @@
+@keyframes gradienteMovimento {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.ImageBackground{
+    margin-top: 10%;
+    height: 352px;
+    width: 1152px;
+    background-color: rgba(0, 0, 255, 0.555);
+    display: flex;
+    justify-self: center;
+    border-radius: 10px;
+    flex-direction: column;
+    background-image: linear-gradient(90deg, rgba(0, 0, 255, 0.5), rgba(70, 70, 224, 0.904), rgba(0, 0, 0, 0.63));
+    animation: gradienteMovimento 20s linear infinite;
+    background-size: 200% 200%;
+
+}
+
+.AlinhamentoHorizontal{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    padding: 2%;
+}
+
+.ImagePerfil{
+    margin-top: 190px;
+    margin-left: -30px;
+}
+
+.InfoPerfil{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 300px;
+    justify-content: flex-end;
+    
+}
+
+.InfoCategoria{
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    
+}
+
+.Info{
+    display: flex;
+    flex-direction: row; 
+    gap: 10px;
+}

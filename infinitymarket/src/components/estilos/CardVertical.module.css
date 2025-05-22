@@ -1,0 +1,141 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 340px;
+    height: 620px;
+    border: 1px solid rgba(128, 128, 128, 0.685);
+    border-radius: 10px;
+    transition: transform 0.8s;
+    
+
+  }
+  
+  .card:hover {
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.199);
+    transform: scale(1);
+    cursor: pointer;
+    border: none;
+  }
+  
+  .card img {
+    width: 300px;
+  }
+  
+  .textCard {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    padding: 10%;
+    padding-top: 0;
+  }
+  
+  .tags {
+    display: flex;
+    flex-direction: row;
+    color: #8EC2F2;
+    justify-content: space-between;
+  }
+  
+  .textTag {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .info {
+    width: 100%;
+  }
+  
+  .textName {
+    font-size: 25px;
+    font-weight: 400;
+  }
+  
+  .textDescricao {
+    color: gray;
+  }
+  
+  .icons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    align-items: flex-end;
+    height: 80px;
+    
+  }
+  
+  .icons p {
+    font-size: 14px;
+  }
+  
+  .date,
+  .coments {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .textIcons {
+    color: gray;
+  }
+  
+  .rodape {
+    display: flex;
+    flex-direction: row;
+    gap: 110px;
+    align-items: center;
+    height: 60px;
+    margin-top: auto;
+  }
+  
+  .rodapeButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .rodapeButton h4 {
+    color: #8EC2F2;
+    margin: 0;
+  }
+  
+  .rodapeButton img {
+    width: 16px;
+    height: 16px;
+  }
+  
+  .favoritos {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  
+  .heartCheckbox {
+    display: none;
+  }
+  
+  .heartLabel {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background-image: url("https://img.icons8.com/ios/50/000000/like--v1.png");
+    background-size: cover;
+    cursor: pointer;
+    transition: transform 0.2s;
+  }
+  
+  .heartCheckbox:checked + .heartLabel {
+    background-image: url("https://img.icons8.com/ios-filled/50/fa314a/like.png");
+    transform: scale(1.1);
+  }
+  
+  .date img,
+  .coments img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  p + p {
+    margin-top: 25px;
+  }
+  

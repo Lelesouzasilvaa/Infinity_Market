@@ -15,7 +15,7 @@ function Menu(){
       }, []);
   
     return(
-        <div className={styles.Container_Maior} style={{ top: `${top}px`, position: 'absolute' }}>
+        <div className={styles.Container_Maior}>
 
 
             <div id={styles.Container_Menor}>
