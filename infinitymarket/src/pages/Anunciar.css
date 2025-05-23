@@ -1,0 +1,61 @@
+.background{
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.MenuPage{
+    height: 70vh;
+    display: flex;
+    align-items: start;
+    margin-right: 10vw;
+}
+.AlinhamentoConteudo{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.AlinhamentoContainers{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.AlinhamentoHorizontal{
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+   
+}
+.AlinhamentoVertical{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+#TitlePage{
+    margin-left: 50px;
+}
+
+.AlinhamentoButton{
+    display: flex;
+    margin-top: 2%;
+}
+
+.AlinhamentoForms{
+    /* border: 1px solid rgba(128, 128, 128, 0.603);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.199); */
+
+}

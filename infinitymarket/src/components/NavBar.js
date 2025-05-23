@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import styles from './estilos/NavBar.module.css';
 
+
 function NavBar(){
     return(
             <div className={styles.topbar}>
