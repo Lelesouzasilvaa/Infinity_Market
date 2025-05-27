@@ -6,17 +6,16 @@
 
 
 .MenuPage{
-    height: 70vh;
     display: flex;
-    align-items: start;
-    margin-right: 10vw;
+    align-self: self-start;
+    margin-left: 320px;
+ 
 }
 .AlinhamentoConteudo{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    gap: 100px;
 
 }
 
@@ -30,18 +29,18 @@
 .AlinhamentoHorizontal{
     display: flex;
     flex-direction: row;
-    gap: 70px;
+    
    
 }
 .AlinhamentoVertical{
     display: flex;
     flex-direction: column;
-    gap: 20px;
     
 }
 
 #TitlePage{
-    margin-left: 50px;
+    display: flex;
+    align-self: center;
 }
 
 .AlinhamentoButton{
@@ -58,4 +57,8 @@
     border-radius: 10px;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.199); */
 
+}
+.Conteudo{
+    display: flex;
+    flex-direction: column;
 }

@@ -13,7 +13,7 @@
 .ImageBackground{
     margin-top: 10%;
     height: 352px;
-    width: 1152px;
+    width: 1200px;
     background-color: rgba(0, 0, 255, 0.555);
     display: flex;
     justify-self: center;

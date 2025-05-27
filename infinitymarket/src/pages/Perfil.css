@@ -1,51 +1,50 @@
-.background{
+.background {
     display: flex;
     flex-direction: column;
-
-}
-
-
-.MenuPage{
-    height: 110vh;
-    display: flex;
-    align-items: start;
-}
-.AlinhamentoConteudo{
-    margin-top: 20px;
+  }
+  
+  .AlinhamentoConteudo {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    
+    
+   
+  }
 
-}
-
-.AlinhamentoContainers{
+  
+  .MenuPage {
+    display: flex;
+    align-self: self-start;
+    margin-top: 150px;
+    margin-left: 200px;
+   
+  }
+  
+  .AlinhamentoContainers {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    margin-left: 150px;
-   
-    
-}
+    align-items: flex-start;
 
-.AlinhamentoHorizontal{
+  }
+  
+  .AlinhamentoHorizontal {
     display: flex;
     flex-direction: row;
     gap: 10px;
-   
-}
-.AlinhamentoVertical{
+  }
+  
+  .AlinhamentoVertical {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    
-}
-
-#TitlePage{
-    margin-left: 50px;
-}
-
-.AlinhamentoButton{
+  }
+  
+  #TitlePage {
+    margin-left: 30px;
+  }
+  
+  .AlinhamentoButton {
     display: flex;
     margin-top: 2%;
-}
+  }
+  
