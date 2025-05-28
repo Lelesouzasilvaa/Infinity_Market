@@ -5,6 +5,7 @@ import Usuario from '../components/Usuario';
 import Menu from '../components/Menu';
 import Buttons from '../components/Button';
 import Forms from '../components/Forms';
+import Abas from '../components/Abas';
 
 function Anunciar(){
     return(
@@ -20,10 +21,11 @@ function Anunciar(){
                     <div className='AlinhamentoContainers'>
                         <h2 id='TitlePage'>Comece adicionando fotos sobre seu produto/serviço!</h2>
                         <div className='AlinhamentoForms'>
-                            <Forms/>   
+                            <Forms/>
+                            <Abas/>   
                         </div>
                         <div className='AlinhamentoButton'>
-                            <Buttons/>
+                             <button id='submit'>Submit</button>
                         </div>  
                     </div> 
                 </div>

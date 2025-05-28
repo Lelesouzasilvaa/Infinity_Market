@@ -29,18 +29,6 @@ function Forms(){
                     </div>
                 </div>
 
-                <div className={styles.buttonsEscolha}>
-                    <div className={styles.buttonVender}>
-                        <img src="/images/icons/message.png" alt="Ícone de cadeado"  />
-                        <h2>Quero Vender</h2>
-                    </div>
-
-                    <div className={styles.buttonSolicitar}>
-                        <img src="/images/icons/cadeado.svg" alt="Ícone de nuvem"  id={styles.id}/>
-                        <h2>Quero Solicitar</h2>
-                    </div>
-                </div>
-             
             </form>
         </div>
     );
