@@ -1,25 +1,227 @@
-body{
-        margin: 0;
-        padding: 0;
-  
-}
-.Background{
-    padding: 2%; 
+.explorar-container {
+  font-family: 'Urbanist', sans-serif;
+  background-color: #ffffff;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
 }
 
-.Container{
-    display: flex;
-    flex-direction: row;
- 
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.Conteudo{
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
-    margin-left: 25%;
+
+.logo {
+  margin-left: 100px;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
 }
-.Alinhamento_Card{
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-} 
+
+.top-bar nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.top-bar nav a {
+  position: relative;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'Urbanist', sans-serif;
+  padding-bottom: 4px;
+}
+
+.top-bar nav a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease;
+}
+
+.top-bar nav a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.criar-img {
+  width: 80px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.criar-img:hover {
+  transform: scale(1.05);
+}
+
+.conteudo-principal {
+  flex-grow: 1;
+  padding-top: 100px;
+  padding-left: 40px;
+  padding-right: 40px;
+  box-sizing: border-box;
+}
+
+.explorar-botao-central {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.carrinho-img {
+  width: 270px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.botao-img {
+  width: 150px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.botao-img:hover {
+  transform: scale(1.05);
+}
+
+.input-container {
+  position: relative;
+  width: 40%;
+  display: flex;
+  align-items: center; 
+}
+
+.input-container input {
+  padding: 22px 16px 12px 40px; 
+  font-size: 14px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 600;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.user-icon {
+  margin-right: 100px;
+  width: 24px;
+  height: auto;
+  transition: transform 0.2s ease;
+}
+
+.user-icon:hover {
+  transform: scale(1.05);
+}
+
+.categorias-mapa {
+  position: relative;
+  width: 100%;
+  height: 600px;
+  margin-top: 0px;
+}
+
+.cat1 { position: absolute; top: 2%;   left: 2%; }
+.cat2 { position: absolute; top: 30%;  left: 17%;  }
+.cat3 { position: absolute; top:60%; left: 2%; }
+.cat4 { position: absolute; top:30%; right:17%; }
+.cat5 { position: absolute; top: 2%;  right: 2%; }
+.cat6 { position: absolute; top:60%;   right:2%; }
+
+.ultimas-publicacoes {
+  margin-top: -140px; 
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.ultimas-publicacoes h2 {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: 'Urbanist', sans-serif;
+  color: #000000;
+  margin-bottom: 0px;
+  margin-top: -20px;
+  text-align: center;
+  padding: 40px 20px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.ultimas-publicacoes:focus {
+  outline: 2px solid #162E8F;
+  outline-offset: 4px;
+}
+
+.seta-img {
+  width: 87px;
+  height: auto;
+  margin-top: -30px;
+  opacity: 0.7;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.seta-img:hover {
+  transform: translateY(5px);
+  opacity: 1;
+}
+
+
+footer {
+  flex-shrink: 0;
+  background-color: #162E8F !important;
+  color: #fff;
+  padding: 20px 40px;
+  text-align: center;
+  opacity: 1 !important;
+  filter: none !important;
+}
+
+#button{
+  width: 100px;
+  height: 50px;
+  transform: scale(1.05);
+  background-color: #162E8F;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+
+  
+}

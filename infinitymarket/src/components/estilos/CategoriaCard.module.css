@@ -1,0 +1,64 @@
+.cardCategoria {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 180px;
+  height: 321px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.categoriaImg {
+  width: auto;
+  height: auto;
+  margin-bottom: 20px;
+  position: absolute;
+  left: 50%;
+  top: 30px;
+  transform: translateX(-50%);
+}
+
+.categoriaNome {
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 180px;
+  text-align: center;
+  color: black;
+}
+
+.botaoAcessar {
+  background: none;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 20px;
+  color: transparent;
+  background-image: linear-gradient(90deg, #6a11cb, #2575fc);
+  font-family: 'Urbanist', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  text-transform: none;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: background 0.3s ease;
+}
+
+.botaoAcessar:hover {
+  background-image: linear-gradient(90deg, #2575fc, #6a11cb);
+}
+
+/* Estilo para variantes */
+.cat2 .categoriaNome,
+.cat4 .categoriaNome {
+  color: #fff;
+}
