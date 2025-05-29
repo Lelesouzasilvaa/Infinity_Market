@@ -4,30 +4,19 @@ import Explorar from './pages/Explorar';
 import Categoria from './pages/Categoria';
 import Anunciar from './pages/Anunciar';
 // import Comunidade from './pages/Comunidade';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
-  const [pagina, setPagina] = useState("explorar");
-
-  const renderizarPagina = () => {
-    switch (pagina) {
-      case "explorar":
-        return <Explorar />;
-      // case "colecoes":
-      //   return <Colecoes />;
-      case "anuncios":
-        return <Anunciar />;
-      // case "comunidade":
-      //   return <Comunidade />;
-      // default:
-      //   return <Explorar />;
-    }
-  };
-
-  return (
-    <div>
-      <NavBar setPagina={setPagina} />
-      {renderizarPagina()}
-    </div>
+   return (
+    <Router>
+      <NavBar />
+      <Routes>
+        {/* <Route path="/" element={<Home />} /> */}
+        <Route path="/Explorar" element={<Explorar />} />
+        <Route path="/Anunciar" element={<Anunciar />} />
+        {/* <Route path="/comunidade" element={<Comunidade />} /> */}
+      </Routes>
+    </Router>
   );
 }
 

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import styles from './estilos/NavBar.module.css';
+import { Link } from 'react-router-dom';
 
 
 
@@ -12,10 +13,9 @@ function NavBar({ setPagina }) {
         <input type="text" placeholder="pesquise por itens, coleções ou contas..." />
       </div>
       <nav>
-        <a href="#" onClick={() => setPagina("explorar")}>Explorar</a>
-        <a href="#" onClick={() => setPagina("colecoes")}>Coleções</a>
-        <a href="#" onClick={() => setPagina("anuncios")}>Anúncios</a>
-        <a href="#" onClick={() => setPagina("comunidade")}>Comunidade</a>
+        <Link to="/Explorar">Explorar</Link>
+        <Link to="/Anuncios">Anúncios</Link>
+        <Link to="/comunidade">Comunidade</Link>
       </nav>
       <button id={styles.button}>Criar</button>
       <img src="/images/icons/user.png" alt="Usuario" className={styles.user_icon} />
