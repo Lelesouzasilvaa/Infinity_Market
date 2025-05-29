@@ -56,7 +56,6 @@ const PaginaExplorar = () => {
 
   return (
     <div className="explorar-container">
-      <NavBar/>
       <main className="conteudo-principal">
         <div className="categorias-mapa">
           {categorias.map((cat, index) => (
@@ -93,8 +92,6 @@ const PaginaExplorar = () => {
           ))}
         </div>
       </main>
-
-      <Rodape />
     </div>
   );
 };

@@ -10,7 +10,6 @@ function Categoria(){
 
     return(
         <div className='background'>
-            <NavBar/>
             <div className='Conteudo'>
                 <Caixa/>
                 <div className='alinhamentoVertical'>
@@ -42,7 +41,6 @@ function Categoria(){
                     <Buttons/>
                 </div>
             </div>
-            <Rodape/>
         </div>
     );
 

@@ -13,9 +13,9 @@ function NavBar({ setPagina }) {
         <input type="text" placeholder="pesquise por itens, coleções ou contas..." />
       </div>
       <nav>
-        <Link to="/Explorar">Explorar</Link>
-        <Link to="/Anuncios">Anúncios</Link>
-        <Link to="/comunidade">Comunidade</Link>
+        <Link to="/explorar">Explorar</Link>
+        <Link to="/categoria">Anúncios</Link>
+        <Link to="/perfil">Comunidade</Link>
       </nav>
       <button id={styles.button}>Criar</button>
       <img src="/images/icons/user.png" alt="Usuario" className={styles.user_icon} />

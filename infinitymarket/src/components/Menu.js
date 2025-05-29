@@ -1,24 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import styles from './estilos/Menu.module.css';
-
+import { useNavigate } from 'react-router-dom';
 
 function Menu(){
-    const [top, setTop] = useState(100);
-
-    useEffect(() => {
-        const handleScroll = () => {
-          setTop(100 + window.scrollY); // Acompanha o scroll
-        };
-    
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-      }, []);
-  
-    return(
+    const navigate = useNavigate(); 
+    return (
         <div className={styles.Container_Maior}>
-
-
-            <div id={styles.Container_Menor}>
+            <div id={styles.Container_Menor} onClick={() => navigate('/perfil')}>
                 <div id={styles.Conteudo}>
                     <img src="./images/icons/layers.png" alt="" />
                     <p id={styles.Text}>Pesquisas Recentes</p>
@@ -28,7 +16,7 @@ function Menu(){
                 </div>
             </div>
 
-            <div id={styles.Container_Menor}>
+            <div id={styles.Container_Menor} onClick={() => navigate('#')}>
                 <div id={styles.Conteudo}>
                     <img src="./images/icons/dollar-sign.png" alt="" />
                     <p id={styles.Text}>Produtos Curtidos</p>
@@ -37,7 +25,8 @@ function Menu(){
                     <img src="/images/icons/chevron-down.png" alt="" id={styles.Seta} />
                 </div>
             </div>
-            <div id={styles.Container_Menor}>
+
+            <div id={styles.Container_Menor} onClick={() => navigate('#')}>
                 <div id={styles.Conteudo}>
                     <img src="./images/icons/user.png" alt="" />
                     <p id={styles.Text}>Meus Anúncios</p>
@@ -47,7 +36,7 @@ function Menu(){
                 </div>
             </div>
 
-            <div id={styles.Container_Menor}>
+            <div id={styles.Container_Menor} onClick={() => navigate('/anuncios')}>
                 <div id={styles.Conteudo}>
                     <img src="./images/icons/camera.png" alt="" />
                     <p id={styles.Text}>Anunciar</p>
@@ -56,10 +45,8 @@ function Menu(){
                     <img src="/images/icons/chevron-down.png" alt="" id={styles.Seta} />
                 </div>
             </div>
-   
         </div>
-    )
-
+    );
 }
 
-export default Menu
+export default Menu;

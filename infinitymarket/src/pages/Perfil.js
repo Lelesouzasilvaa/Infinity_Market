@@ -1,5 +1,4 @@
 import './Perfil.css';
-import NavBar from '../components/NavBar';
 import Rodape from '../components/Rodape';
 import Usuario from '../components/Usuario';
 import Menu from '../components/Menu';
@@ -10,12 +9,10 @@ function Perfil(){
     return(
         <div className='background'>
             <div className='Conteudo'>
-                <NavBar/>
-                <Usuario/>
-                <div className='AlinhamentoConteudo'>
-                    <div className='MenuPage'>
-                        <Menu/>
+                    <div className='AlinhamentoHeader'>
+                        <Usuario/>
                     </div>
+                <div className='AlinhamentoConteudo'>
                     <div className='AlinhamentoContainers'>
                         <h2 id='TitlePage'>Veja as últimas publicações visualizadas</h2>
                         <div className='AlinhamentoVertical'>
@@ -37,10 +34,7 @@ function Perfil(){
                     </div> 
                 </div>
             </div>
-          
-            <div className='RodapePage'>
-                <Rodape/>
-            </div>
+    
         </div>
     );
 }

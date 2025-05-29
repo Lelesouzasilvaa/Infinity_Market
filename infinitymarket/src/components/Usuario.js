@@ -1,4 +1,5 @@
 import styles from './estilos/Usuario.module.css';
+import Menu from '../components/Menu'
 
 function Usuario(){
     return(
@@ -22,8 +23,9 @@ function Usuario(){
                     </div>   
                 </div>
             </div>
-            
-
+            <div className='MenuPage'>
+                        <Menu/>
+                    </div>
         </div>
     );
 }

@@ -1,3 +1,12 @@
+.Conteudo{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-center;
+  margin-top: 50px;
+  
+  
+}
+
 .background {
     display: flex;
     flex-direction: column;
@@ -5,21 +14,12 @@
   
   .AlinhamentoConteudo {
     display: flex;
-    flex-direction: row;
+    margin-top: -420px;
+    margin-left: 680px;
     
     
-   
   }
 
-  
-  .MenuPage {
-    display: flex;
-    align-self: self-start;
-    margin-top: 150px;
-    margin-left: 200px;
-   
-  }
-  
   .AlinhamentoContainers {
     display: flex;
     flex-direction: column;
@@ -40,11 +40,12 @@
   }
   
   #TitlePage {
-    margin-left: 30px;
+    align-self: flex-start;
   }
   
   .AlinhamentoButton {
     display: flex;
     margin-top: 2%;
   }
-  
+
+ 
