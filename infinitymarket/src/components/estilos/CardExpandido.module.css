@@ -1,0 +1,140 @@
+
+
+.cardAnuncio {
+  display: flex;
+  flex-direction: column;
+  width: 540px;
+  height: 720px;
+  border: 1px solid rgba(128, 128, 128, 0.685);
+  border-radius: 10px;
+  transition: transform 0.8s;
+  align-items: center;
+}
+
+.cardAnuncio:hover {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.199);
+  transform: scale(1);
+  cursor: pointer;
+  border: none;
+}
+
+.cardAnuncio img {
+  width: 350px;
+}
+
+.cardConteudo {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  padding: 10%;
+  padding-top: 0;
+}
+
+.cardTags {
+  display: flex;
+  flex-direction: row;
+  color: #8EC2F2;
+  justify-content: space-between;
+}
+
+.cardTagItem {
+  margin: 0;
+  padding: 0;
+}
+
+.cardInfo {
+  width: 100%;
+}
+
+.cardTitulo {
+  font-size: 25px;
+  font-weight: 400;
+}
+
+.cardDescricao {
+  color: gray;
+}
+
+.cardDetalhes {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: flex-end;
+  height: 80px;
+}
+
+.cardDetalhes p {
+  font-size: 14px;
+}
+
+.cardData,
+.cardComentarios {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.cardTextoDetalhe {
+  color: gray;
+}
+
+.cardRodape {
+  display: flex;
+  flex-direction: row;
+  gap: 110px;
+  align-items: center;
+  height: 60px;
+  margin-top: auto;
+}
+
+.cardLink {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.cardLink h4 {
+  color: #8EC2F2;
+  margin: 0;
+}
+
+.cardLink img {
+  width: 16px;
+  height: 16px;
+}
+
+.cardFavorito {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.cardCheckbox {
+  display: none;
+}
+
+.cardLabelFavorito {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-image: url("https://img.icons8.com/ios/50/000000/like--v1.png");
+  background-size: cover;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.cardCheckbox:checked + .cardLabelFavorito {
+  background-image: url("https://img.icons8.com/ios-filled/50/fa314a/like.png");
+  transform: scale(1.1);
+}
+
+.cardData img,
+.cardComentarios img {
+  width: 20px;
+  height: 20px;
+}
+
+p + p {
+  margin-top: 25px;
+}

@@ -7,6 +7,7 @@ import Perfil from './pages/Perfil';
 import Rodape from './components/Rodape';
 import Curtidos from './pages/Curtidos';
 import MeusAnuncios from './pages/MeusAnuncios';
+import Visualizar from './pages/Visualizar';
 
 // import Comunidade from './pages/Comunidade';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -22,6 +23,7 @@ function App() {
         <Route path="/categoria" element={<Categoria />} />
         <Route path="/curtidos" element={<Curtidos />} />
         <Route path="/meusAnuncios" element={<MeusAnuncios />} />
+        <Route path="/visualizar" element={<Visualizar />} />
       </Routes>
       <Rodape />
     </Router>

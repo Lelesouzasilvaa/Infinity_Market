@@ -1,6 +1,8 @@
 import styles from './estilos/CardVertical.module.css';
+import { useNavigate } from 'react-router-dom';
 
 function CardVertical() {
+  const navigate = useNavigate(); 
   return (
     <div className={styles.card}>
       <img src="/images/produtos/produto1.png" alt="Produto" />
@@ -30,7 +32,7 @@ function CardVertical() {
 
             <div className={styles.rodape}>
             <div className={styles.rodapeButton}>
-                <a><h4>Veja Mais</h4></a>
+                <a onClick={() => navigate('/visualizar')}><h4>Veja Mais</h4></a>
                 <img src="/images/icons/arrow_blue.png" alt="Ícone de seta" />
             </div>
 
