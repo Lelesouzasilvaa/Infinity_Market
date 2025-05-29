@@ -16,7 +16,7 @@ function Menu(){
                 </div>
             </div>
 
-            <div id={styles.Container_Menor} onClick={() => navigate('#')}>
+            <div id={styles.Container_Menor} onClick={() => navigate('/curtidos')}>
                 <div id={styles.Conteudo}>
                     <img src="./images/icons/dollar-sign.png" alt="" />
                     <p id={styles.Text}>Produtos Curtidos</p>
@@ -26,7 +26,7 @@ function Menu(){
                 </div>
             </div>
 
-            <div id={styles.Container_Menor} onClick={() => navigate('#')}>
+            <div id={styles.Container_Menor} onClick={() => navigate('/meusAnuncios')}>
                 <div id={styles.Conteudo}>
                     <img src="./images/icons/user.png" alt="" />
                     <p id={styles.Text}>Meus Anúncios</p>

@@ -216,7 +216,6 @@ footer {
 #button{
   width: 100px;
   height: 50px;
-  transform: scale(1.05);
   background-color: #162E8F;
   border: none;
   border-radius: 10px;
@@ -224,4 +223,8 @@ footer {
   cursor: pointer;
 
   
+}
+
+#button:hover{
+  transform: scale(1.2);
 }

@@ -15,11 +15,13 @@ const SessaoCards = ({ titulo, cards, alignRight }) => {
           ))}
         </div>
       </div>
-      <img 
-        src="/assets/seta-lado.png"
-        alt="Seta para o lado"
-        className={styles.setaLado}
-      />
+      <div className={styles.setaLado}>
+        <img 
+          src="/images/icons/setaLado.png" 
+          alt="Seta para o lado" 
+          className={styles.setaImg}
+          />
+        </div>
     </div>
   );
 };

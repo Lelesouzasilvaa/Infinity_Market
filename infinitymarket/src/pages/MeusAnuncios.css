@@ -1,0 +1,43 @@
+.paginaMeusAnuncios {
+  
+}
+
+.containerConteudo {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.headerUsuario {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 30px;
+}
+
+.areaConteudo {
+    display: flex;
+    flex-direction: column;
+    margin-top: -450px;
+    margin-left: 380px;
+}
+
+.containerCards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+
+
+.botaoCentralizado {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.AlinhamentoContaners{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

@@ -14,11 +14,11 @@
 
 .cardCategoria:hover{
     box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
-    background-color: #162e8f;
+    background-color: #CFE0E6;
     color: white;
     cursor: pointer;
-    border: 2px solid #162e8f;
     transition: all 0.3s ease;
+    
 }
 
 .categoriaImg {
@@ -41,6 +41,7 @@
   text-align: center;
   color: black;
 }
+
 
 .botaoAcessar {
   background: none;
@@ -67,15 +68,29 @@
   cursor: pointer;
   
 }
+.cat2 .botaoAcessar, .cat4 .botaoAcessar{
+  background-image: linear-gradient(90deg, #2574fcb6, #CFE0E6);
+}
 
-.cat1 { position: absolute; top: 2%;   left: 2%; background-color:hover{: red}; }
+.cat2 .botaoAcessar:hover, .cat4 .botaoAcessar:hover{
+  background-image: linear-gradient(90deg, #CFE0E6, #2574fcb6);
+}
+
+.cat1 { position: absolute; top: 2%;   left: 2%; }
 .cat2 { position: absolute; top: 30%;  left: 17%;  }
 .cat3 { position: absolute; top:60%; left: 2%; }
 .cat4 { position: absolute; top:30%; right:17%; }
 .cat5 { position: absolute; top: 2%;  right: 2%; }
 .cat6 { position: absolute; top:60%;   right:2%; }
 
+.cat2:hover, .cat4:hover{
+  background-color: #162e8f;
 
+}
+
+.cat2 .categoriaNome, .cat4 .categoriaNome{
+  color: white;
+}
 .ultimas-publicacoes {
   margin-top: -140px; 
   text-align: center;
